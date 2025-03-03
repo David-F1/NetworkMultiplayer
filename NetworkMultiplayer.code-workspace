@@ -1,0 +1,1353 @@
+{
+	"folders": [
+		{
+			"name": "NetworkMultiplayer",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Unreal\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "NetworkMultiplayer Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Debug Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Debug Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Debug Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayer Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Android Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android DebugGame Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android DebugGame Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android DebugGame Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayer Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Android DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Development Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Development Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Development Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayer Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Android Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Test",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Test Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Test Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Test Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayer Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Test",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Android Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Test",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Shipping",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Shipping Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Shipping Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Build",
+					"NetworkMultiplayer Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Shipping Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-Project=D:/UnrealProjects/NetworkMultiplayer/NetworkMultiplayer.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"NetworkMultiplayer Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Shipping",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayer Android Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayer Android Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayer",
+					"Android",
+					"Shipping",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NetworkMultiplayerEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"label": "NetworkMultiplayerEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"NetworkMultiplayerEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Unreal\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch NetworkMultiplayer (Debug)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\NetworkMultiplayer\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "NetworkMultiplayer Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayer (DebugGame)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\NetworkMultiplayer\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "NetworkMultiplayer Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayer (Development)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\NetworkMultiplayer\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "NetworkMultiplayer Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayer (Test)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\NetworkMultiplayer\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "NetworkMultiplayer Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayer (Shipping)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\NetworkMultiplayer\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "NetworkMultiplayer Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayerEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\Unreal\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "NetworkMultiplayerEditor Win64 Debug Build",
+				"args": [
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject"
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayerEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Unreal\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "NetworkMultiplayerEditor Win64 DebugGame Build",
+				"args": [
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject"
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch NetworkMultiplayerEditor (Development)",
+				"request": "launch",
+				"program": "C:\\Unreal\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "NetworkMultiplayerEditor Win64 Development Build",
+				"args": [
+					"D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject"
+				],
+				"cwd": "C:\\Unreal\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Unreal\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Unreal\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Unreal\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=D:\\UnrealProjects\\NetworkMultiplayer\\NetworkMultiplayer.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Unreal\\UE_5.3"
+			}
+		]
+	}
+}
